@@ -8,6 +8,7 @@ const Verify = () => {
   const [otp, setOtp] = useState("");
   const { btnLoading, verifyOtp } = UserData();
   const [show, setShow] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(""); // For error handling
   const navigate = useNavigate();
 
   function onChange(value) {
@@ -17,12 +18,18 @@ const Verify = () => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    await verifyOtp(Number(otp), navigate);
+    try {
+      await verifyOtp(Number(otp), navigate);
+    } catch (error) {
+      setErrorMessage("Verification failed. Please try again.");
+    }
   };
+
   return (
     <div className="auth-page">
       <div className="auth-form">
         <h2>Verify Account</h2>
+        {errorMessage && <p className="error-message">{errorMessage}</p>}
         <form onSubmit={submitHandler}>
           <label htmlFor="otp">Otp</label>
           <input
@@ -32,10 +39,9 @@ const Verify = () => {
             required
           />
           <ReCAPTCHA
-            sitekey=" 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+            sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
             onChange={onChange}
           />
-          ,
           {show && (
             <button disabled={btnLoading} type="submit" className="common-btn">
               {btnLoading ? "Please Wait..." : "Verify"}
