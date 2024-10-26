@@ -11,8 +11,8 @@ const Footer = () => {
     <footer>
       <div className="footer-content">
         <p>
-          &copy; 2024 Your E-Learning Platform. All rights reserved. <br /> Made
-          with ❤️ <a href="">Jyotish Yadav</a>
+          &copy; 2024 E-Learning Platform. All rights reserved. <br /> Made
+          with ❤️ <a href="https://jyotishyadav.netlify.app/">Jyotish Yadav</a>
         </p>
         <div className="social-links">
           <a href="">
