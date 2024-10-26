@@ -5,41 +5,60 @@ const Testimonials = () => {
   const testimonialsData = [
     {
       id: 1,
-      name: "John Doe",
-      position: "Student",
+      name: "Pratham Keshari",
+      position: "Chemistry Student",
       message:
-        "This platform helped me learn so effectively. The courses are amazing and the instructors are top-notch.",
+        "This platform has completely transformed my approach to learning! The course content is detailed, and the instructors bring complex topics to life with real-world examples.",
       image:
-        "https://th.bing.com/th?q=Current+Bachelor&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247",
+        "./image/pratham.jpg",
     },
     {
       id: 2,
-      name: "Jane Smith",
-      position: "Student",
+      name: "Shubham Chowdhury",
+      position: "Computer Science Engineering Student",
       message:
-        "I've learned more here than in any other place. The interactive lessons and quizzes make learning enjoyable.",
+        "The hands-on projects and interactive sessions have made coding feel so accessible. I’ve gained skills here that have made me more confident in my abilities.",
       image:
-        "https://th.bing.com/th/id/OIP.GKAiW3oc2TWXVEeZAzrWOAHaJF?w=135&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+        "./image/shubham.jpg",
     },
     {
       id: 3,
-      name: "John Doe",
-      position: "Student",
+      name: "Rahul Sen",
+      position: "Software Development Enthusiast",
       message:
-        "This platform helped me learn so effectively. The courses are amazing and the instructors are top-notch.",
+        "Thanks to this platform, I now feel equipped to handle real-world challenges. The practical exercises and project-based learning are game-changers!",
       image:
-        "https://th.bing.com/th?q=Current+Bachelor&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247",
+        "./image/3.png",
     },
     {
       id: 4,
-      name: "Jane Smith",
-      position: "Student",
+      name: "Aman gupta",
+      position: "App Development Intern",
       message:
-        "I've learned more here than in any other place. The interactive lessons and quizzes make learning enjoyable.",
+        "The personalized feedback and support from mentors have been invaluable. I now approach app development with a structured mindset, and I’m excited about my future.",
       image:
-        "https://th.bing.com/th/id/OIP.GKAiW3oc2TWXVEeZAzrWOAHaJF?w=135&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+       "./image/4.jpg",
+    },
+    {
+      id: 5,
+      name: "Anita Kapoor",
+      position: "Data Science Enthusiast",
+      message:
+        "From data wrangling to advanced machine learning concepts, this platform covers it all. The content is well-organized, making it easy to learn at my own pace.",
+      image:
+       "./image/5.png",
+    },
+    {
+      id: 6,
+      name: "Meera Iyer",
+      position: "Web Development Intern",
+      message:
+        "This platform taught me to develop responsive websites with modern tools and techniques. I feel prepared to tackle projects and create beautiful, functional sites.",
+      image:
+        "./image/6.png",
     },
   ];
+  
   return (
     <section className="testimonials">
       <h2>What our students say</h2>
