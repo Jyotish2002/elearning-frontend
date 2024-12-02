@@ -4,7 +4,10 @@ import App from "./App.jsx";
 import { UserContextProvider } from "./context/UserContext.jsx";
 import { CourseContextProvider } from "./context/CourseContext.jsx";
 
-export const server = "http://localhost:5000";
+
+
+export const server = "https://elearning-server-z1mr.onrender.com";
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
