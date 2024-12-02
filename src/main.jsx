@@ -6,7 +6,7 @@ import { CourseContextProvider } from "./context/CourseContext.jsx";
 
 
 
-export const server = "https://elearning-server-z1mr.onrender.com";
+export const server = "http://localhost:5000";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
