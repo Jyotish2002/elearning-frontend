@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Route, Routes  } from "react-router-dom"; //Here it make the changes and make it possible to avoid the error of loading
+
 import Home from "./pages/home/Home";
 import Header from "./components/header/Header";
 import Login from "./pages/auth/Login";
@@ -30,7 +31,7 @@ const App = () => {
       {loading ? (
         <Loading />
       ) : (
-        <BrowserRouter>
+        <Router>
           <Header isAuth={isAuth} />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -91,7 +92,7 @@ const App = () => {
             />
           </Routes>
           <Footer />
-        </BrowserRouter>
+        </Router>
       )}
     </>
   );
